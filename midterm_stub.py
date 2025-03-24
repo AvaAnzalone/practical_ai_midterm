@@ -2,7 +2,8 @@
 # A simple word guessing game using strings, lists, and functions
 
 # TODO: Import the random module to select random words
-
+import random
+random.choice(word_list) 
 
 word_list = [
     "python",
@@ -27,6 +28,11 @@ word_list = [
 # - Uses random.choice to select a random word from your word list
 # - Returns the selected word in lowercase
 
+def get_random_word():
+  selected_word = random.choice(word_list)
+  return selected_word
+# Testing the function
+print(get_random_word())
 
 # TODO: Create a function to initialize the game state that:
 # - Takes parameter: word (str)
@@ -35,7 +41,8 @@ word_list = [
 #   - "guessed_letters": an empty list to track guessed letters
 #   - "word_completion": a string of underscores representing unguessed letters (e.g., "_ _ _ _")
 #   - "tries_remaining": number of incorrect guesses allowed (start with 6)
-
+def initialize_game_state(word)
+   word_completion
 
 # TODO: Create a function to display the game state that:
 # - Takes parameter: game_state (dict)
